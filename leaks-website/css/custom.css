@@ -1,0 +1,38 @@
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: rgb(39,204,160);
+  background: linear-gradient(150deg, rgba(39,204,160,1) 0%, rgba(38,145,199,1) 64%, rgba(73,116,174,1) 100%);
+}
+
+.rounded-div {
+  border-radius: 15px;
+  background: white;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+}
+
+.fixed-height {
+  height: 300px;
+}
+
+.bottom-padding {
+  padding-bottom: 3em;
+}
+
+.top-padding {
+  padding-top: 100px;
+}
+
+.big-break {
+  height: 5em;
+}
+
+.big-break {
+  height: 3em;
+}
