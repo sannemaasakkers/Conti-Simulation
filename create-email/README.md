@@ -4,6 +4,9 @@ This small tools generates an .eml file which can be used during an adversary si
 
 ## Usage
 
+![Email demo](create-email.gif)
+![Email demo](result-email.png)
+
 ```bash
 python3 create.py -f [email address of the attacker] -t [email address of the recipient] -s [subject of the email] -o [output file to write]
 ```
