@@ -1,7 +1,10 @@
 # leaks-website
 
 This small tools sets up a Conti leaks website given the stolen files in an earlier phase of the adversary simulation demo.
+
 ## Usage
+
+![Leaks website demo](leaks-website.gif)
 
 ```bash
 python3 serve.py -n [name of the hacked organisation] -d [directory of the stolen files to include on the website] -s [amount of the stolen files to display on the website]
