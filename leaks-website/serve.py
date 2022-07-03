@@ -1,14 +1,12 @@
 from bottle import route, run, template, static_file
-import argparse
-import os
-import requests
+import argparse, os, requests, sys
 
 parser = argparse.ArgumentParser(description="Create ContiLeaks demo website",
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("-n", "--name", help="Name of the hacked organisation", nargs="?", const="LeakedBV")
 parser.add_argument("-d", "--dir",  help="Directory of the stolen files", nargs="?", const="demo")
 parser.add_argument("-s", "--size", help="Amount of leaked files / file size", nargs="?", const="10GB")
-args = parser.parse_args()
+args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
 
 leaked_name = os.listdir(args.dir)[0]
 
